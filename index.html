@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUP LC2 - TP Integrador</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/pages/index.css">
+    <script defer src="js/common.js"></script>
+    <script defer src="js/pages/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <img  src="./css/img/logo.png" alt="nube">
+        
+            <h1>
+                <span>Clima App</span>
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="current-page"><a href="#">Clima</a></li>
+                <li><a href="./add-city.html">Agregar Ciudad</a></li>
+                <li><a href="./help.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>El Clima Ahora</h2>
+        <section id="form-city-list">
+            <form action="" id="form-ciudades">
+                <select name="ciudades" id="ciudades"  required class="selec_ciud" onclick="noElements()">
+                    <option value="" disabled selected>Seleccionar Ciudad</option>
+                </select>
+                <input type="button" value="Consultar" name="boton" id="consultar" class="boton" onclick="llamarAPI()">
+            </form>
+        </section>
+        <section id="section-weather-result">
+            <div id="card" style="display: none;">
+                <h3 id="city"></h3>
+                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
+                <p id="temperatura"></p>
+                <p id="sensacion"></p>
+                <p id="humedad"></p>
+                <p id="velocidad"></p>
+                <p id="presion"></p>
+            </div>
+        </section> 
+        <div id="errorNo" class="advert" style="display: none;"><b>Error: no hay ciuades agregadas</b></div>
+    </main>
+
+    <footer>
+        <p>Desarrollado con ❤ - LC2</p>
+    </footer>
+</body>
+</html>

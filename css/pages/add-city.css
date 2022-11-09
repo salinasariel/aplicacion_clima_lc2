@@ -1,0 +1,54 @@
+section{
+    text-align: center;
+}
+
+.agregar_ciud{
+    background-color: #00594c;
+    border-radius: 13px; 
+    border: none;
+    width: 115px;
+    height: 43px;
+    color: white;
+    font-size: 3rm;
+    font-weight: 700;
+}
+
+.boton:hover {
+    background-color: #017060;
+}
+
+#ciudad{
+    margin-top: 5px;
+}
+
+input#texto{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px;
+}
+
+#success, #warning, #error{
+    border: 5px solid;
+    margin: 20px 30% 20px 30%;
+    padding:15px 10px 15px 10px;
+
+    font-size:13px;
+    text-align:center;
+    width:auto;
+    border-radius: 4mm;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+}
+#success {
+    background-color: #28a745;
+}
+#warning {
+    background-color: #ffc107;
+
+}
+#error {
+    background-color: #dc3545; 
+}
