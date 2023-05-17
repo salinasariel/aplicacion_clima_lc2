@@ -9,16 +9,14 @@
     <link rel="stylesheet" href="./css/pages/index.css">
     <script defer src="js/common.js"></script>
     <script defer src="js/pages/index.js"></script>
+    <script defer src="js/pages/add-city.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="encabezado">
-            <img  src="./css/img/logo.png" alt="nube">
+    <header class="scale-up-vertical-top">
         
-            <h1>
-                <span>Clima App</span>
-            </h1>
-        </div>
         <nav>
             <ul>
                 <li class="current-page"><a href="#">Clima</a></li>
@@ -27,7 +25,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="scale-up-center">
         <h2>El Clima Ahora</h2>
         <section id="form-city-list">
             <form action="" id="form-ciudades">
@@ -37,10 +35,11 @@
                 <input type="button" value="Consultar" name="boton" id="consultar" class="boton" onclick="llamarAPI()">
             </form>
         </section>
+        <div id="warning2" class="advert" style="display: block;"><b>Si es la primera vez que utiliza el servicio, <br> deberá agregar una ciudad. </b> <a id="cruz" onclick="cerrarCruz()">X</a></div>
         <section id="section-weather-result">
             <div id="card" style="display: none;">
                 <h3 id="city"></h3>
-                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
+                <img src="./css/img/logo.png" width="70px" alt="">
                 <p id="temperatura"></p>
                 <p id="sensacion"></p>
                 <p id="humedad"></p>
@@ -50,9 +49,5 @@
         </section> 
         <div id="errorNo" class="advert" style="display: none;"><b>Error: no hay ciuades agregadas</b></div>
     </main>
-
-    <footer>
-        <p>Desarrollado con ❤ - LC2</p>
-    </footer>
 </body>
 </html>

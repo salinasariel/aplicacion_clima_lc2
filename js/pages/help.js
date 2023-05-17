@@ -18,3 +18,20 @@ function validarEmail(email) {
       }, 2000);
   }
 }
+
+function contactBlock(){
+  let cartelContact = document.getElementById("contact");
+  
+  let cartelInfo = document.getElementById("info");
+  cartelInfo.style.display = "none";
+  
+  cartelContact.style.display = "block";
+}
+function volver(){
+  let cartelContact = document.getElementById("contact");
+  let textoAyuda = document.getElementById("tituloAyuda");
+  let cartelInfo = document.getElementById("info");
+  cartelInfo.style.display = "block";
+  textoAyuda.style.display = "block";
+  cartelContact.style.display = "none";
+}

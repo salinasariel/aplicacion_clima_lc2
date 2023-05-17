@@ -25,17 +25,17 @@ function addNewCityToLocalStorage(newCity) {
         cartelError.style.display = "block";
         setInterval(function(){
             cartelError.style.display = "none";
-        }, 3000);
+        }, 6000);
     } else if(ciudad_repetida == true){
         cartelWarning.style.display = "block";
         setInterval(function(){
             cartelWarning.style.display = "none";
-        }, 3000);
+        }, 6000);
     } else {
         cartelSuccess.style.display = "block";
         setInterval(function(){
             cartelSuccess.style.display = "none";
-        }, 3000);
+        }, 6000);
         cities.push(newCity);
         localStorage.setItem("CITIES", JSON.stringify(cities));
     }

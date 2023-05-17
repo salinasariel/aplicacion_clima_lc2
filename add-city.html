@@ -9,16 +9,13 @@
     <link rel="stylesheet" href="./css/pages/add-city.css">
     <script defer src="js/common.js"></script>
     <script defer src="js/pages/add-city.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="encabezado">
-            <img  src="./css/img/logo.png" alt="nube">
+    <header >
         
-            <h1>
-                <span>Clima App</span>
-            </h1>
-        </div>
         <nav>
             <ul>
                 <li><a href="./index.html">Clima</a></li>
@@ -27,7 +24,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="scale-up-center">
         <h2>Agregar Ciudad</h2>
         <section>
             <form action="">
@@ -37,13 +34,10 @@
             </form>
            
         </section>
-        <div id="success" class="advert" style="display: none;"><b>Ciudad agregada con exito</b></div>
-        <div id="error" class="advert" style="display: none;"><b>Error: la ciudad ingresada no se encuentra en la API o se produjo un error al consultar</b></div>
-        <div id="warning" class="advert" style="display: none;"><b>La ciudad ingresada ya se encuentra almacenada</b></div>
+        <div class="scale-up-center" id="success" class="advert" style="display: none;"><b>Nueva ciudad agregada con exito</b></div>
+        <div class="scale-up-center" id="error" class="advert" style="display: none;"><b>La ciudad no se encuentra disponible</b></div>
+        <div class="scale-up-center" id="warning" class="advert" style="display: none;"><b>La ciudad ingresada ya esta agregada</b></div>
     </main>
 
-    <footer>
-        <p>Desarrollado con ❤ - LC2</p>
-    </footer>
 </body>
 </html>
